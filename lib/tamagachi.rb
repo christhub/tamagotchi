@@ -6,5 +6,20 @@ class Tamagachi
     @emotional_distress_level = 0
   end
 
-  
+  define_method(:name) do
+    @name
+  end
+
+  define_method(:food_level) do
+    @food_level
+  end
+
+  define_method(:sleep_level) do
+    @sleep_level
+  end
+
+  define_method(:emotional_distress_level) do
+    @emotional_distress_level
+  end
+
 end
