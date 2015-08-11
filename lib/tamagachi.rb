@@ -22,4 +22,12 @@ class Tamagachi
     @emotional_distress_level
   end
 
+  define_method(:set_food_level) do |food_level|
+    @food_level = food_level
+  end
+
+  define_method(:alive?) do
+    @food_level != 0
+  end
+
 end

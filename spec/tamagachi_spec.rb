@@ -11,4 +11,12 @@ describe(Tamagachi) do
       expect(my_pet.emotional_distress_level()).to(eq(0))
     end
   end
+
+  describe('#alive?') do
+    it('is alive if the food level is above 0') do
+      my_pet = Tamagachi.new('Carlos')
+      my_pet.set_food_level(0)
+      expect(my_pet.alive?).to(eq(false))
+    end
+  end
 end
